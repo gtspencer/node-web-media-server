@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Server Home Page</title>
+  </head>
+  <body>
+    <h1 align="center">Server Home Page</h1>
+    <p></p>
+
+    <form action = "/sendButton" method = "GET">
+        <p>Media in path: 'G:_new'</p>
+         <input type = "submit" value = "Rename Folders and Delete">
+    </form>
+
+    <p></p>
+    <p></p>
+
+    <form style ='float: left; padding: 5px;' action = "http://localhost:32400" method = "GET" target="_blank">
+         <input type = "submit" value = "Plex">
+    </form>
+    <form style ='float: left; padding: 5px;' action = "http://localhost:8181" method = "GET" target="_blank">
+         <input type = "submit" value = "Tautulli">
+    </form>
+
+    <div style="position: absolute; bottom: 0; width: 99%">
+    <p><iframe style="width: 49%; height: 500px; overflow: show;" src="http://localhost:32400" width="50" height="50" scrolling="yes">Iframes not supported</iframe>
+    <iframe align="right" style="width: 49%; height: 500px; overflow: show;" src="http://localhost:8181" width="50" height="50" scrolling="yes">Iframes not supported</iframe></p>
+    </div>
+
+<!--     <ul id="dynamic-list"></ul>
+
+    <input type="text" id="candidate"/>
+    <form action = "/removeItem" method = "GET">
+         <input type = "submit" value = "Remove Item">
+    </form>
+    <form action = "/addItem" method = "GET">
+         <input type = "submit" value = "Add Item">
+    </form> -->
+  </body>
+</html>
